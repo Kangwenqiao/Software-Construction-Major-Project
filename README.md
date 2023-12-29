@@ -68,7 +68,3 @@ This project is licensed under the [MIT License](LICENSE).
 - **Email:** wenqiaokang@outlook.com
 
 For inquiries or issues, please feel free to contact the author.
-
-```
-
-This template provides a basic structure for your README and includes placeholders that you can replace with your specific details.
