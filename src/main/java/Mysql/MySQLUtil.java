@@ -28,11 +28,6 @@ public class MySQLUtil {
 	private static final String SELECT_ALL_SQL = "SELECT * FROM eq";
 	private static final String TRUNCATE_TABLE_SQL = "TRUNCATE TABLE eq";
 	private static final String SELECT_LATEST_SQL = "SELECT * FROM eq ORDER BY id DESC LIMIT ?";
-	private static final String SHOW_VARIABLES_SQL = "SHOW VARIABLES LIKE 'general_log'";
-	private static final String SET_LOG_ON_SQL = "SET GLOBAL general_log = 'ON'";
-	private static final String SET_LOG_OFF_SQL = "SET GLOBAL general_log = 'OFF'";
-	private static final String SHOW_SELECT_QUERIES_SQL = "SHOW GLOBAL STATUS LIKE 'Com_select'";
-	private static final String SHOW_INSERT_QUERIES_SQL = "SHOW GLOBAL STATUS LIKE 'Com_insert'";
 
 	/**
 	 * 获取数据库连接。
