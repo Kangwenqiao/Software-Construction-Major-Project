@@ -1,4 +1,4 @@
-# Equation Application
+# Software Construction Major Project
 
 **Author:** 202107927wqKang  
 **Contact:** wenqiaokang@outlook.com  
@@ -7,12 +7,12 @@
 
 ## Overview
 
-Equation Application is a JavaFX program that generates arithmetic questions for users with an interactive user interface. It allows users to generate, save, load, and check arithmetic questions.
+This repository contains the source code for the Software Construction Major Project, a JavaFX program designed for generating arithmetic questions and facilitating interactive learning.
 
 ## Features
 
-- **Generate Questions:** Generates a set of arithmetic questions.
-- **Save Questions:** Stores questions in a MySQL database.
+- **Generate Questions:** Dynamically creates a set of arithmetic questions.
+- **Save Questions:** Stores generated questions in a MySQL database.
 - **Load Questions:** Retrieves and displays questions from the database.
 - **Check Questions:** Allows users to check their answers and provides an accuracy report.
 
@@ -25,8 +25,8 @@ Equation Application is a JavaFX program that generates arithmetic questions for
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/Equation-Application.git
-   cd Equation-Application
+   git clone https://github.com/Kangwenqiao/Software-Construction-Major-Project.git
+   cd Software-Construction-Major-Project
    ```
 
 2. **Compile and Run:**
