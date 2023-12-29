@@ -22,3 +22,53 @@ Equation Application is a JavaFX program that generates arithmetic questions for
 - MySQL database is set up, and the necessary tables exist.
 
 ## Getting Started
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/Equation-Application.git
+   cd Equation-Application
+   ```
+
+2. **Compile and Run:**
+   ```bash
+   javac EquationApplication.java
+   java EquationApplication
+   ```
+
+3. **Configure Database:**
+   - Ensure MySQL is running.
+   - Modify MySQL connection details in `MySQLUtil.java`.
+
+4. **Use the Application:**
+   - Follow on-screen instructions to generate, save, load, and check arithmetic questions.
+
+## Database Configuration
+
+Modify MySQL connection details in `MySQLUtil.java` to match your database configuration.
+
+```java
+// MySQLUtil.java
+
+private static final String JDBC_URL = "jdbc:mysql://your-database-host:3306/your-database-name";
+private static final String USERNAME = "your-username";
+private static final String PASSWORD = "your-password";
+```
+
+## Dependencies
+
+The application uses JavaFX for the graphical user interface.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+- **Name:** 202107927wqKang
+- **Email:** wenqiaokang@outlook.com
+
+For inquiries or issues, please feel free to contact the author.
+
+```
+
+This template provides a basic structure for your README and includes placeholders that you can replace with your specific details.
