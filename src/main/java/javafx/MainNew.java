@@ -1,17 +1,20 @@
-package javafx;
+package javafx; // Author: wqKang
+// Author: wqKang
+// Author: wqKang
 
 import Mysql.MySQLUtil;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class MainNew {
-    public static void main(String[] args) {
-        try (Connection connection = MySQLUtil.getConnection()) {
-            MySQLUtil.truncateTable(connection);
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        EquationApplication.main(args);
-    }
-}
+// Author: wqKang
+public class MainNew { // Author: wqKang
+    public static void main(String[] args) { // Author: wqKang
+        try (Connection connection = MySQLUtil.getConnection()) { // Author: wqKang
+            MySQLUtil.truncateTable(connection); // Author: wqKang
+        } catch (SQLException | ClassNotFoundException e) { // Author: wqKang
+            e.printStackTrace(); // Author: wqKang
+        } // Author: wqKang
+        EquationApplication.main(args); // Author: wqKang
+    } // Author: wqKang
+} // Author: wqKang
