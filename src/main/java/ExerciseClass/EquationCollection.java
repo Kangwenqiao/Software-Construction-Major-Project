@@ -86,4 +86,14 @@ public class EquationCollection implements Iterable<IEquation> {
     public Iterator<IEquation> iterator() {
         return equationSet.iterator();
     }
+
+    /**
+     * 获取方程集合的大小。
+     *
+     * @return 方程集合的大小
+     */
+    public int size() {
+        return equationSet.size();
+    }
+
 }

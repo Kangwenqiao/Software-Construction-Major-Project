@@ -22,7 +22,7 @@ import java.util.Optional;
  */
 public class EquationApplication extends Application {
     private static final int NUM_QUESTIONS = 5;
-    private EquationCollection equationCollection;
+    public EquationCollection equationCollection;
     private VBox questionVBox;
     private TextField[] answerFields;
     private PieChart accuracyChart;
@@ -88,7 +88,7 @@ public class EquationApplication extends Application {
     }
 
     // 初始化用户界面
-    private void initializeUI() {
+    public void initializeUI() {
         // 清空现有题目VBox的内容
         questionVBox.getChildren().clear();
 
@@ -114,7 +114,7 @@ public class EquationApplication extends Application {
     }
 
     // 从数据库加载并显示题目
-    private void loadAndDisplayDatabaseQuestions() {
+    public void loadAndDisplayDatabaseQuestions() {
         // 清空现有题目VBox的内容
         questionVBox.getChildren().clear();
 
@@ -171,7 +171,7 @@ public class EquationApplication extends Application {
     }
 
     // 生成并显示题目
-    private void generateAndDisplayQuestions() {
+    public void generateAndDisplayQuestions() {
         equationCollection.generate(NUM_QUESTIONS, new EquationCheckerOfRange(0, 100));
         answerFields = new TextField[NUM_QUESTIONS];
 
@@ -198,7 +198,7 @@ public class EquationApplication extends Application {
     }
 
     // 将题目保存到数据库
-    private void saveEquationsToDatabase() {
+    public void saveEquationsToDatabase() {
         try (Connection connection = MySQLUtil.getConnection()) {
             for (IEquation equation : equationCollection.getEquationsList()) {
                 MySQLUtil.insertEquation(connection, equation.getOperand1(), String.valueOf(equation.getOperator()), equation.getOperand2());
@@ -208,11 +208,6 @@ public class EquationApplication extends Application {
         }
     }
 
-    // 检查答案并显示准确度图表
-    private void checkAnswersAndDisplayChart() {
-        int correctCount = checkAnswers(answerFields);
-        displayAccuracyChart(correctCount);
-    }
 
     // 显示准确度图表
     private void displayAccuracyChart(int correctCount) {
@@ -270,8 +265,7 @@ public class EquationApplication extends Application {
 
         Optional<ButtonType> result = alert.showAndWait();
         if (result.isPresent() && result.get() == ButtonType.OK) {
-            // 用户点击了确定按钮
-            // 可以添加处理逻辑，如果需要的话
+
         }
     }
 

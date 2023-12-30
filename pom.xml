@@ -53,6 +53,30 @@
            <artifactId>jackson-databind</artifactId>
            <version>2.15.3</version>
        </dependency>
+       <dependency>
+           <groupId>org.testng</groupId>
+           <artifactId>testng</artifactId>
+           <version>RELEASE</version>
+           <scope>test</scope>
+       </dependency>
+       <dependency>
+           <groupId>org.testng</groupId>
+           <artifactId>testng</artifactId>
+           <version>RELEASE</version>
+           <scope>test</scope>
+       </dependency>
+       <dependency>
+           <groupId>org.testfx</groupId>
+           <artifactId>testfx-junit5</artifactId>
+           <version>4.0.16-alpha</version> <!-- 使用您的TestFX版本 -->
+           <scope>test</scope>
+       </dependency>
+       <dependency>
+           <groupId>org.testfx</groupId>
+           <artifactId>testfx-core</artifactId>
+           <version>4.0.16-alpha</version> <!-- 检查最新版本 -->
+           <scope>test</scope>
+       </dependency>
 
    </dependencies>
 
@@ -108,5 +132,5 @@
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
-  
+
 </project>
